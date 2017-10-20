@@ -6,8 +6,6 @@ def sum_recursive(list):
     """
     if not list:
         return 0
-    elif len(list) == 1:
-        return list[0]
     else:
         return list[0] + sum_recursive(list[1:])
 
