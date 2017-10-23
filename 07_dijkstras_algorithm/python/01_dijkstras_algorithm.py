@@ -39,6 +39,7 @@ def find_lowest_cost_node(costs):
             # ... set it as the new lowest-cost node.
             lowest_cost = cost
             lowest_cost_node = node
+    print(lowest_cost_node)
     return lowest_cost_node
 
 # Find the lowest-cost node that you haven't processed yet.
@@ -61,6 +62,6 @@ while node is not None:
     # Find the next node to process, and loop.
     node = find_lowest_cost_node(costs)
 
-print "Cost from the start to each node:"
-print costs
+print("Cost from the start to each node:")
+print(costs)
 
