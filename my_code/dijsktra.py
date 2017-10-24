@@ -38,7 +38,7 @@ def djikstra(graph, start, end):
 
         return costs
 
-    def display_shorted_path(start, end):
+    def display_shortest_path(start, end):
         """
         Display path from start to end and length of total path
         :return: print path from start to end and length of total path
@@ -48,7 +48,7 @@ def djikstra(graph, start, end):
             return start + ' -> ' + end
         else:
             parent = parents[end]
-            str = display_shorted_path(start, parent) + ' -> ' + end
+            str = display_shortest_path(start, parent) + ' -> ' + end
             return str
 
 
@@ -83,7 +83,7 @@ def djikstra(graph, start, end):
         processed.append(cheapest_node)
 
 
-    shortest_path = display_shorted_path(start, end)
+    shortest_path = display_shortest_path(start, end)
     print('Shortest path: ' + shortest_path + ' with length = ' + str(costs[end]))
 
 
